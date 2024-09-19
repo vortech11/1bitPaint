@@ -13,7 +13,7 @@ def generate_color(dimensions):
 color = generate_color(dimensions)
 
 pygame.init()
-W, H=500, 500
+W, H=dimensions[0]*size[0], dimensions[1]*size[1]
 screen = pygame.display.set_mode([W, H])
 pygame.display.set_caption("Game Thing")
 clock = pygame.time.Clock()
